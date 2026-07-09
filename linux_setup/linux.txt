@@ -1,0 +1,108 @@
+O que é LINUX:
+	- Um sistema operativo é um programa que controla tudo o que acontece num computador, incluindo todas as aplicações. Também ajuda as aplicações a funcionarem corretamente.
+	- exemplos: Windows, MacOS, android, iOS
+	- LINUX é só mais um sistema operativo
+
+O que é a linha de comandos:
+	- Uma aplicação que te permite correr outros programas/aplicações escrevendo o nome deles.
+	- Nem todos os programas criam uma janela, alguns interagem só pelo terminal.
+	- Quando se executa programas pela linha de comandos é comum chamar aos programas comandos
+
+Como executar comando:
+	- coloca-se o nome do comando
+	- coloca-se os argumentos do comando
+	- pode-se pôr vários argumentos separados por um espaço
+	- explicar o comando echo
+	- ctrl + c para um comando
+	- exercício 1: $ echo ola mundo
+
+Sistema de ficheiros:
+	- pastas servem para organizar todos os ficheiros
+	- pastas contêm ficheiros e outras pastas
+	- a pasta / chamada root (raiz em português) contém todas as pastas e ficheiros dentro dela
+	- uma pasta importante é a /home (casa em português), todos os utilizadores têm uma pasta com o seu nome dentro da /home. Estas pastas contêm todos os ficheiros de um utilizador
+
+Caminhos absolutos
+	- todas as pastas e ficheiros podem ser identificados com um caminho absoluto único
+
+Pasta atual:
+	- em qualquer momento nós estamos numa dada pasta, vamos chamar-lhe a pasta atual.
+	- no inicio, é a pasta do utilizador
+	- o terminal mostra a azul a pasta atual
+	- ~ é sinónimo da pasta do utilizador
+
+pwd;
+	- mostra o caminho absoluto da pasta atual
+	- exercício 2: $ pwd
+
+ls:
+	- mostra as pastas e ficheiros que a pasta atual contêm
+	- exercício 3: $ ls
+
+
+
+cd:
+	- permito-nos navegar pelo sistema de ficheiros ao alterar a pasta atual
+	- aceita um argumento que é o nome da pasta que vai passar a ser a pasta atual
+	- . é a pasta atual
+	- .. é a pasta anterior, por outras palavras, a pasta que contêm a pasta atual
+	- ~ é a pasta do utilizador
+	- exercício 4: procurar o ficheiro tesouro.txt
+	- a pasta “” contém umas quantas pastas e ficheiros, lá dentro está o ficheiro tesouro.txt
+
+cat:
+	- permite ler ficheiros de texto
+	- ele lê o ficheiro todo de uma só vez
+	- exercício 5: $ cat tesouro.txt
+
+less:
+	- também lê ficheiro, mas mostra só um bocado de cada vez e podemos andar pelo ficheiro
+	- dá jeito para ler ficheiros grandes
+	- (a tecla Q termina o programa, ou ctrl + c)
+	- exercício 6: $ less tesouro.txt (ler outro ficheiro qualquer que seja maior)
+
+mkdir:
+	- cria uma nova pasta dentro da pasta atual
+	- exercício 7: criar uma pasta
+		- $ cd ~
+		- $ mkdir baú
+
+Caminhos relativos:
+	- permitem escrever o caminho de um ficheiro em relação à pasta atual
+	- todos os comandos que aceitam caminhos absolutos também aceitam caminhos relativos
+	- exercício 8:
+        - em papel, escrever o caminho relativo de umas pastas e ficheiros
+        - 1: ../Documentos/Matemática
+		- 2: ../../Imagens
+		- 3: ../floresta/arvore.txt
+		- 4: caverna/tunel/baú
+
+mv:
+	- move ficheiros e pasta de uma pasta para outra
+	- como primeiro argumento colocamos o caminho para o ficheiro ou pasta que queremos mover, como segundo o caminho para a pasta onde ele vai passar a estar
+	- exercício 9: $ mv (path to tesouro.txt)/tesouro.txt ~/baú
+
+rmdir:
+	- apaga pastas, mas têm de estar vazias e não podem ser a pasta atual
+rm:
+	- apaga ficheiros
+	- exercício 10: apagar a pasta lixeira e os seus ficheiros
+		- $ rm lixeira/(ficheiro1)
+		- $ rm lixeira/(ficheiro2)
+		- $ rmdir lixeira
+
+Opções de comandos:
+	- quase todos os comandos aceitam argumentos especiais chamados opções, que alteram o que o comando faz
+	- é comum as opções serem especificadas com um traço seguido de uma letra que corresponde à opção
+	- é costume colocar as opções primeiro que os outros argumentos
+	- o comando rm têm uma opção muito útil, -r, que permite apagar uma pasta e tudo o que ela contêm. Usem com cuidado!!!
+	- exercício 11: $ rm -r (pasta que continha o tesouro)
+
+cp:
+	- faz cópias de ficheiros
+	- funciona de forma muito semelhante ao mv
+
+
+python:
+	- python é um comando que aceita um ficheiro de código de python e correr esse	 código
+	- exercício 12: $  python olámundo.py

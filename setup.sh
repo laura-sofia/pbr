@@ -1,7 +1,7 @@
 #!/bin/bash
 
 cd ~
-rm -rf pbr AtividadePrimeirosBits
+rm -rf pbr AtividadePrimeirosBits atividade_linux
 git clone https://github.com/laura-sofia/pbr.git
 mv ~/pbr/linux_setup ~/atividade_linux
 rm -rf ~/pbr
